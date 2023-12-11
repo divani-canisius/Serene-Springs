@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/*---------------------------------------------------------header---------------------------------------------------------------------------*/
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:15vh;
+    line-height: 10vh;
+    padding: 0 20px;
+
+}
+
+nav.logo{
+    width: 80px;
+}
+
+ nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    position: relative;
+ }
+
+nav ul li a{
+    text-decoration: none;
+    color:#ffff;
+    font-size: 17px;
+    margin: 0 10px;
+}
+
+nav ul li a:hover{
+    color: #141414; 
+}
+
+button{
+    border: none;
+    background: none;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.primary-btn{
+    padding: 15px 40px;
+    background:#141414;
+    border: 2px solid white;
+    font-weight: bold;
+    color: #ffff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.content{
+    background-color: whitesmoke;
+}
+
+.content p{
+    color: #141414;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    text-align: center;
+}
+
+.content h4{
+    color: #141414;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    text-align: center;
+    transition: transform .2s;
+}
+
+.content h4:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+}
+
+.content hr{
+    width: 50%;
+}
+
+
+
+
+/*---------------------------------------------------------footer---------------------------------------------------------------------------*/
+
+.foot{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/IMAGES/footerbw.jpeg);
+    
+}
+.foot h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #141414;
+    text-align: center;
+    font-size: x-large;
+}
+
+.foot h3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #141414;
+    text-align: center;
+    font-size: larger;
+}
+
+.foot p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #141414;
+    text-align: center;
+    font-size: larger;
+}
+
+.foot img{
+    width: 3%;
+    height: 3%;
+}

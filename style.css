@@ -1,0 +1,1058 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/*---------------------------------------------------------- header---------------------------------------------------------------*/
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:15vh;
+    line-height: 10vh;
+    padding: 0 20px;
+
+}
+
+nav.logo{
+    width: 80px;
+}
+
+ nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    position: relative;
+ }
+
+nav ul li a{
+    text-decoration: none;
+    color:#ffff;
+    font-size: 17px;
+    margin: 0 10px;
+}
+
+nav ul li a:hover{
+    color: #9a7b4f; 
+}
+
+button{
+    border: none;
+    background: none;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.primary-btn{
+    padding: 15px 40px;
+    background:#9a7b4f;
+    border: 2px solid white;
+    font-weight: bold;
+    color: #ffff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+.content h1{
+    font-family:'Kaushan Script', cursive;
+    font-size: 100px;
+    font-weight: 600;
+    color: #ffff;
+}
+
+.content p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 25px;
+    color: #ffff;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* vertical */
+        text-align: center; 
+    }
+
+    nav {
+        position: relative; /* remove absolute*/
+        text-align: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; /* space between logo and nav */
+    }
+
+    nav ul li {
+        display: block; /* vertical */
+        margin: 10px 0; /* vertical space between links */
+    }
+
+    .content h1 {
+        font-size: 60px; /* small font size for small screens */
+    }
+
+    .content p {
+        font-size: 20px; /* small font size for small screens */
+    }
+}
+
+
+
+/*-------------------Section Introduction-------------------------*/
+#intro{
+    width: 100%;
+    text-align: center;
+    padding: 70px 0;
+    background-color: #fdf4dc;
+}
+
+.title1{
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.title1 h1{
+    margin: auto;
+    color: #4b371c;
+    font-weight: bold;
+    font-size: 35px;
+
+}
+
+.introbox{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.mainintro{
+    flex-basis: 50%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #9a7b4f;
+    font-size: 22px;
+}
+
+.mainintro hr{
+    color: #9a7b4f;
+    border-width: 1.5px;
+    
+}
+
+.mainimg{
+    flex-basis: 50%;
+    margin: auto;
+}
+ .mainimg img{
+    width: 90%;
+    border-radius: 10px;
+ }
+
+ @media (max-width: 768px) {
+    #intro {
+        padding: 40px 0;
+    }
+
+    .title1 h1 {
+        font-size: 28px;
+    }
+
+    .mainintro {
+        font-size: 18px;
+    }
+
+    .mainimg img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    #intro {
+        padding: 20px 0;
+    }
+
+    .title1 h1 {
+        font-size: 24px;
+    }
+
+    .mainintro {
+        font-size: 16px;
+    }
+
+    .mainimg img {
+        width: 70%;
+    }
+}
+
+
+ /*---------------------------------paragraph 1-------------------------------*/
+
+.p1box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.p1{
+    flex-basis: 50%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #9a7b4f;
+    font-size: 22px;
+    text-align: left;
+}
+
+.p1 h4{
+    text-align: center;
+    font-size: larger;
+    transition: transform .2s;
+}
+
+.p1 h4:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+}
+
+.p1img{
+    flex-basis: 50%;
+    margin: auto;
+}
+ .p1img img{
+    width: 80%;
+    border-radius: 10px;
+ }
+
+ /*---------------------------------paragraph 2-------------------------------*/
+
+.p2box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.p2{
+    flex-basis: 50%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #9a7b4f;
+    font-size: 22px;
+    text-align: left;
+}
+
+.p2 h4{
+    text-align: center;
+    font-size: larger;
+    transition: transform .2s;
+}
+
+.p2 h4:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+}
+
+.p2img{
+    flex-basis: 50%;
+    margin: auto;
+}
+ .p2img img{
+    width: 80%;
+    border-radius: 10px;
+ }
+
+
+ /*---------------------------------paragraph 3-------------------------------*/
+
+.p3box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.p3{
+    flex-basis: 50%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #9a7b4f;
+    font-size: 22px;
+    text-align: left;
+}
+
+.p3 h4{
+    text-align: center;
+    font-size: larger;
+    transition: transform .2s;
+}
+
+.p3 h4:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+}
+
+.p3img{
+    flex-basis: 50%;
+    margin: auto;
+}
+ .p3img img{
+    width: 80%;
+    border-radius: 10px;
+ }
+
+
+
+
+ /*---------------------------------------------------------footer---------------------------------------------------------------------------*/
+
+ .foot{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(footer.jpg);
+    
+}
+.foot h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    text-align: center;
+    font-size: x-large;
+}
+
+.foot h3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    text-align: center;
+    font-size: larger;
+}
+
+.foot p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    text-align: center;
+    font-size: larger;
+}
+
+.foot img{
+    width: 3%;
+    height: 3%;
+}
+
+
+
+/*-----------------------------------------------------------------BRANCHES---------------------------------------------------------------------*/
+
+#branches{
+    background-color: #fdf4dc;
+   
+}
+
+#branch1{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(kalutara.jpeg);
+}
+
+#branch2{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(haputale.jpeg);
+}
+
+#branch3{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(hikka.jpg);
+}
+
+
+
+/*--------------------------------branch 1 -----------------------------*/
+
+.b1txt h4{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #fdf4dc;
+    text-align: center;
+    font-size: x-large;
+    transition: transform .2s;
+}
+
+.b1txt h4:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5);
+}
+
+.b1txt p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #fdf4dc;
+    text-align: center;
+    font-size: larger;
+}
+
+.b1map{
+    transition: 1s;
+}
+
+.b1map :hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+/*--------------------------------branch 2 -----------------------------*/
+
+.b2txt h4{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #fdf4dc;
+    text-align: center;
+    font-size: x-large;
+    transition: transform .2s;
+}
+
+.b2txt h4:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5);
+}
+
+.b2txt p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #fdf4dc;
+    text-align: center;
+    font-size: larger;
+}
+
+.b2map{
+    transition: 1s;
+}
+
+.b2map :hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+
+/*--------------------------------branch 3 -----------------------------*/
+
+.b3txt h4{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #fdf4dc;
+    text-align: center;
+    font-size: x-large;
+    transition: transform .2s;
+}
+
+.b3txt h4:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5);
+}
+
+.b3txt p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #fdf4dc;
+    text-align: center;
+    font-size: larger;
+}
+
+.b3map{
+    transition: 1s;
+}
+
+.b3map :hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    
+    .btxt h4 {
+        font-size: large;
+    }
+
+    
+    .btxt p {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 480px) {
+   
+    .btxt h4 {
+        font-size: medium;
+    }
+
+    
+    .btxt p {
+        font-size: small;
+    }
+}
+
+
+
+
+/*--------------------------------branch table-----------------------------*/
+
+th, td {
+    padding: 15px;
+  }
+
+.info{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #fdf4dc;
+}
+
+.info h4{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #9a7b4f;
+    text-align: center;
+    font-size: x-large;
+    transition: transform .2s;
+}
+
+.info h4:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5);
+}
+
+@media (max-width: 768px) {
+    /* Reduce padding */
+    th, td {
+        padding: 10px;
+    }
+
+    .info h4 {
+        font-size: large;
+    }
+}
+
+@media (max-width: 480px) {
+    /* reduce padding */
+    th, td {
+        padding: 8px;
+    }
+
+    .info h4 {
+        font-size: medium;
+    }
+}
+
+/*--------------------------------------------------------------------ADVENTURES------------------------------------------------------------------*/
+
+#adventures{
+    background-color: #fdf4dc;
+}
+
+.kayaking{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.kp{
+    flex-basis: 50%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #9a7b4f;
+    font-size: 22px;
+    text-align: center;
+}
+
+.kp h4{
+    text-align: center;
+    font-size: larger;
+    transition: transform .2s;
+}
+
+.kp h4:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+}
+
+.kimg{
+    flex-basis: 50%;
+    margin: auto;
+    transition: 1s;
+}
+
+.kimg :hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+ .kimg img{
+    width: 80%;
+    border-radius: 10px;
+ }
+
+
+ /*------------------------------------------------------------------------------------------------------------------*/
+ .ziplining{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.zp{
+    flex-basis: 50%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #9a7b4f;
+    font-size: 22px;
+    text-align: center;
+}
+
+.zp h4{
+    text-align: center;
+    font-size: larger;
+    transition: transform .2s;
+}
+
+.zp h4:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+}
+
+.zimg{
+    flex-basis: 50%;
+    margin: auto;
+    transition: 1s;
+}
+
+.zimg :hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+ .zimg img{
+    width: 80%;
+    border-radius: 10px;
+ }
+
+ /*--------------------------------------------------------------------------------------------------------------------------------*/
+ .oceanfleet{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.op{
+    flex-basis: 50%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #9a7b4f;
+    font-size: 22px;
+    text-align: center;
+}
+
+.op h4{
+    text-align: center;
+    font-size: larger;
+    transition: transform .2s;
+}
+
+.op h4:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+}
+
+.oimg{
+    flex-basis: 50%;
+    margin: auto;
+    transition: 1s;
+}
+
+.oimg :hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+ .oimg img{
+    width: 80%;
+    border-radius: 10px;
+ }
+
+
+
+ @media (max-width: 768px) {
+    .adventure {
+        width: 90%;
+    }
+
+    .adventure .adventure-panel h4 {
+        font-size: 18px;
+    }
+
+    .adventure .adventure-image img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .adventure {
+        width: 100%;
+    }
+
+    .adventure .adventure-panel h4 {
+        font-size: 16px;
+    }
+
+    .adventure .adventure-image img {
+        width: 60%;
+    }
+}
+
+
+
+
+ /*--------------------------------------------------------------------RESTAURANTS------------------------------------------------------------------*/
+#restaurants{
+    background-color: #fdf4dc;
+}
+
+.ebtn a{
+    text-align: center;
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #9a7b4f;
+    border: .5px solid #9a7b4f;
+}
+
+.ebtn a:hover{
+    color: whitesmoke;
+    background-color: #9a7b4f;
+}
+
+.res1{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.r1{
+    flex-basis: 50%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #9a7b4f;
+    font-size: 22px;
+    text-align: center;
+}
+
+.r1 h4{
+    text-align: center;
+    font-size: larger;
+    transition: transform .2s;
+}
+
+.r1 h4:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+}
+
+.r1img{
+    flex-basis: 50%;
+    margin: auto;
+    transition: 1s;
+}
+
+.r1img :hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+ .r1img img{
+    width: 80%;
+    border-radius: 10px;
+ }
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+ .res2{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.r2{
+    flex-basis: 50%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #9a7b4f;
+    font-size: 22px;
+    text-align: center;
+}
+
+.r2 h4{
+    text-align: center;
+    font-size: larger;
+    transition: transform .2s;
+}
+
+.r2 h4:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+}
+
+.r2img{
+    flex-basis: 50%;
+    margin: auto;
+    transition: 1s;
+}
+
+.r2img :hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+ .r2img img{
+    width: 80%;
+    border-radius: 10px;
+ }
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+.res3{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.r3{
+    flex-basis: 50%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #9a7b4f;
+    font-size: 22px;
+    text-align: center;
+}
+
+.r3 h4{
+    text-align: center;
+    font-size: larger;
+    transition: transform .2s;
+}
+
+.r3 h4:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+}
+
+.r3img{
+    flex-basis: 50%;
+    margin: auto;
+    transition: 1s;
+}
+
+.r3img :hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+ .r3img img{
+    width: 80%;
+    border-radius: 10px;
+ }
+
+ @media (max-width: 768px) {
+    .res {
+        width: 90%;
+    }
+
+    .res .r h4 {
+        font-size: 18px;
+    }
+
+    .res .rimg img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .res {
+        width: 100%;
+    }
+
+    .res .r h4 {
+        font-size: 16px;
+    }
+
+    .res .rimg img {
+        width: 60%;
+    }
+}
+
+
+/*--------------------------------------------------------------------BOOK NOW------------------------------------------------------------------*/
+
+.bookingform {
+    background-color:#fdf4dc;
+    border: 1px solid #4b371c;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 100px;
+    width: 50%;
+    margin: auto;
+}
+
+.bookingform h2 {
+    color:#9a7b4f;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #4b371c;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #9a7b4f;
+    color: #fdf4dc;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4b371c;
+}
+
+.dive-assist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .bookingform {
+        padding: 40px;
+        width: 80%;
+    }
+
+    .bookingform h2 {
+        font-size: 24px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    select {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bookingform {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .bookingform h2 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    select {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+

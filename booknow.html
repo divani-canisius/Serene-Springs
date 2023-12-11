@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serene Springs - Book Now</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan Script' rel='stylesheet'>
+    
+</head>
+
+<body>
+
+    <!---------------------------------------------------------------------Header--------------------------------------------------------------->
+    <header>
+        <div class="adventurestop">
+            <img src="book.jpg" width="100%" alt="book">
+            <nav>
+                <img src="serene logo.png" class="logo" alt="logo" height="200" width="200">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="branches.html">BRANCHES</a></li>
+                    <li><a href="adventures.html">ADVENTURES</a></li>
+                    <li><a href="restaurants.html">RESTAURANTS</a></li>
+                    <li><button class="primary-btn"><a href="booknow.html">BOOK NOW</a></button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <br><br><br><br>
+
+    <div id="bookingform">
+        <section class="bookingform">
+            <h2>Book Now</h2>
+            <form id="booking-form" name="form1" action="url" method="get">
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="checkin">Check-in Date</label>
+                <input type="date" id="checkin" name="checkin"><br><br>
+
+                <label for="singleroomnum">Number of Single Rooms</label>
+                <input type="number" id="singleroomnum" name="Single-Room" min="0" value="0"><br><br>
+
+                <label for="doubleroomnum">Number of Double Rooms</label>
+                <input type="number" id="doubleroomnum" name="Double-Room" min="0" value="0"><br><br>
+
+                <label for="tripleroomnum">Number of Triple Rooms</label>
+                <input type="number" id="tripleroomnum" name="Triple-Room" min="0" value="0"><br><br>
+
+                <label for="adults">Number of Adults</label>
+                <input type="number" id="adults" name="Adults" min="1" value="1"><br><br>
+
+                <label for="children">Number of Children</label>
+                <input type="number" id="children" name="Children" min="0" value="0"><br><br>
+
+                <label for="duration">Duration of the Stay (days)</label>
+                <input type="number" id="duration" name="Days" min="1" value="1"><br><br>
+
+                <label for="extrabed">Extra bed</label>
+                <input type="checkbox" id="extrabed" name="Extra-Bed"><br><br>
+
+                <label for="wifi">Wifi</label>
+                <input type="checkbox" id="wifi" name="WiFi"><br><br>
+
+                <label for="view">View</label>
+                <input type="radio" id="pool" name="view">Pool View<br><br>
+                <input type="radio" id="garden" name="view">Garden View<br><br>
+
+                <label for="promocode">Enter promo code</label>
+                <input type="text" id="promocode" name="promocode"><br><br>
+
+                <div id="loyaltypoints">Loyalty Points: <span id="pointsdisplay">0</span></div><br><br>
+
+                <div id="bookinginfo">
+                    <h3>Booking Information</h3><br>
+                    <p><strong>Current Booking(s): </strong><span id="currentbooking"></span></p><br>
+                    <p><strong>Cost of Current Booking(s): </strong><span id="currentbookingcost">$0.00</span></p><br>
+                    <p><strong>Overall Booking: </strong><span id="overallbooking"></span>
+                    </p><br>
+                    <p><strong>Overall Cost of Booking: </strong><span id="overallbookingcost">$0.00</span></p><br>
+                </div>
+
+                <button type="button" id="BookNow">Book Now</button>
+                <button type="button" id="Clear">Clear</button>
+                <button type="button" id="AddToFavourites">Add to Favorites</button>
+                <button type="button" id="CheckLoyalty">Check Loyalty</button>
+
+            </form>
+        </section>
+    </div>
+
+
+    <br><br><br><br>
+
+    <section class="bookingform" id="adv-form">
+        <h2>Book an Adventure</h2>
+        <form name="form2" action="url" method="get">
+
+            <label for="adventure">Select Adventure</label>
+            <select id="adventure" name="adventure">
+                <option value="adventure">Diving</option>
+                
+            </select><br><br>
+
+            <label for="Advadults">Number of Adults</label>
+            <input type="number" id="Advadults" name="AdvAdults" min="0" value="0"><br><br>
+
+            <label for="Advchildren">Number of Children</label>
+            <input type="number" id="Advchildren" name="AdvChildren" min="0" value="0"><br><br>
+
+            <div class="dive-assist">
+                <div class="dive-assist-sub">
+                    <label for="diveAdA">Dive Assist for Adults</label>
+                    <input type="checkbox" id="diveAdA" name="diveAdA"><br><br>
+                </div>
+                <div class="dive-assist-sub">
+                    <label for="diveChA">Dive Assist for Children</label>
+                    <input type="checkbox" id="diveChA" name="diveChA"><br><br>
+                </div>
+            </div>
+
+            <label for="type">type</label>
+            <input type="radio" id="local" name="type" checked>Local<br><br>
+            <input type="radio" id="foreign" name="type">Foreign<br><br>
+
+
+            <label for="date">Date</label>
+            <input type="date" id="Advdate" name="Advdate"><br><br><br>
+
+            <div id="Advbookinginfo">
+                <h3>Booking Information</h3><br>
+                <p><strong>Cost: </strong><span id="Advcurrentbookingcost">$0.00</span></p>
+            </div>
+            <br>
+            <button type="button" id="AdvBookBtn">Book Adventure</button>
+        </form>
+    </section>
+    <br><br><br><br>
+
+    <!---------------------------------------------------------------------Footer--------------------------------------------------------------->
+    <footer>
+        <div class="foot">
+            <br><br><br><br>
+
+            <h2>Serene Springs Hotel Resort </h2><br><br>
+            <h3>Mahawaskaduwa,<br>Kalutara,<br>Sri Lanka</h3><br><br>
+            <p>+94 36 2236728/ +94 36 2439898 / +94 36 2548777 <br>
+                info@serenespringshotel.com<br>fom@serenespringshotel.com
+            </p>
+            <br><br>
+            <center><img src="fb.png" alt="fb"><img src="ig.png" alt="ig"></center>
+            <br><br><br><br>
+        </div>
+    </footer>
+
+
+    <script src="booking.js"></script>
+    <script src="advenBook.js"></script>
+
+</body>
+
+</html>
